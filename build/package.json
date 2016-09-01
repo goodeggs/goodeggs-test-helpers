@@ -1,7 +1,7 @@
 {
   "name": "goodeggs-test-helpers",
   "version": "1.0.0",
-  "description": "Subscribe domain events using consumer contracts.",
+  "description": "Basic setup used for all goodeggs tests.",
   "main": "index.js",
   "author": "Good Eggs Inc.",
   "contributors": [
@@ -24,7 +24,7 @@
     "dirty-chai": "^1.2.2",
     "geomoment": "*",
     "kexec": "^1.3.0",
-    "lodash": "^4.6.1",
+    "lodash.isfunction": "^3.0.8",
     "sinon": "^1.14.1",
     "sinon-chai": "^2.7.0"
   },
@@ -61,7 +61,7 @@
     "test": "npm run lint && npm run test:mocha --"
   },
   "publishConfig": {
-    "registry": "https://npm.goodeggs.com/",
+    "registry": "https://registry.npmjs.org/",
     "always-auth": true
   },
   "eslintConfig": {

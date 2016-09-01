@@ -8,7 +8,7 @@ var _chai = require('chai');
 
 var _chai2 = _interopRequireDefault(_chai);
 
-var _lodash = require('lodash');
+var _lodash = require('lodash.isfunction');
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
@@ -36,7 +36,7 @@ Object.keys(describe).forEach(function (attr) {
 GLOBAL.withContext = function (attribute, promiseFn) {
   return beforeEach('setting context ' + attribute, function () {
     var promise = promiseFn;
-    if (_lodash2.default.isFunction(promiseFn)) promise = promiseFn.call(this);
+    if ((0, _lodash2.default)(promiseFn)) promise = promiseFn.call(this); // eslint-disable-line
 
     return _bluebird2.default.resolve(promise).bind(this).then(function (result) {
       this[attribute] = result;

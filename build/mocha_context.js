@@ -50,4 +50,4 @@ afterEach('restore the sinon sandbox', function () {
 
 process.nextTick(function () {
   return delete require.cache[require.resolve(__filename)];
-});
+}); // eslint-disable-line
