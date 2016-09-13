@@ -1,5 +1,4 @@
 /* eslint-env goodeggs/server-side-test */
-
 import '../src';
 
 import Promise from 'bluebird';
