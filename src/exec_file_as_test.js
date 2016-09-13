@@ -34,7 +34,7 @@ if (!global.describe) {
   // hack to support nsrun (https://github.com/demands/nsrun)
   try {
     // check to see if nsrun exists in $PATH:
-    cp.execSync('nsrun'); // eslint-disable-line no-sync
+    cp.execSync('nsrun', {stdio: 'ignore'}); // eslint-disable-line no-sync
     command = command.replace(/npm run/g, 'nsrun');
   } catch (e) { /* noop */ }
 
