@@ -11,6 +11,8 @@ if (!global.describe) {
   const script = process.argv[1];
   const watch = (process.argv[2] === '--watch' || process.argv[2] === '-w');
 
+  console.log({script, watch});
+
   // find the nearest package.json
   let pkgPath = process.cwd();
   let pkgJsonFile = null;
@@ -23,6 +25,7 @@ if (!global.describe) {
       pkgPath = path.dirname(pkgPath);
     }
   }
+  console.log({pkgJsonFile, pkgPath});
   if (pkgJson === null) errExit('Could not find a package.json in the current directory or any parent directories.');
   if (pkgJson.scripts === undefined) errExit(`${pkgJsonFile} does not have a scripts section; cannot run test.`);
 
@@ -30,6 +33,7 @@ if (!global.describe) {
   const scriptName = watch ? 'test:watch:single' : 'test:single';
   if (pkgJson.scripts[scriptName] === undefined) errExit(`${pkgJsonFile} does not have a '${scriptName}' script; cannot run test.`);
   let command = pkgJson.scripts[scriptName].replace('__TESTFILE__', script);
+  console.log({scriptName, command});
 
   // hack to support nsrun (https://github.com/demands/nsrun)
   try {
@@ -38,11 +42,14 @@ if (!global.describe) {
     command = command.replace(/npm run/g, 'nsrun');
   } catch (e) { /* noop */ }
 
+  console.log({command});
+
   const env = Object.assign({}, process.env, {
     PATH: `${path.join(pkgPath, 'node_modules', '.bin')}:${process.env.PATH}`,
   });
 
   try {
+    console.log('go go go');
     cp.execSync(command, {env, stdio: 'inherit'}); // eslint-disable-line no-sync
   } catch (e) {
     process.exit(e.status);
