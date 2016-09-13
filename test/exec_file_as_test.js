@@ -6,7 +6,7 @@ import path from 'path';
 
 describe('exec_file_as_test', function () {
   it('allows you to run a js file and have it interpereted as a test', function (done) {
-    this.timeout(5000);
+    this.timeout(100000);
 
     const file = path.join(__dirname, 'simpletest.js');
     const proc = cp.spawn('babel-node', [file]);
