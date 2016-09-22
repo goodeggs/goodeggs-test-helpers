@@ -10,3 +10,6 @@ chai.use(dirtyChai);
 chai.use(sinonChai);
 chai.use(chaid);
 chai.use(chaiDateTime);
+
+// To add more chai plugins, require chai from this file.
+export default chai;
