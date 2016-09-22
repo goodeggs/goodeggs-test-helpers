@@ -2,7 +2,12 @@
   "name": "goodeggs-test-helpers",
   "version": "1.1.1",
   "description": "Basic setup used for all goodeggs tests.",
-  "main": "index.js",
+  "main": "server.js",
+  "browser": {
+    "./server.js": "./browser.js",
+    "sinon": "./sinon_webpack_shim.js",
+    "./global.js": "./global_browser_shim.js"
+  },
   "author": "Good Eggs Inc.",
   "contributors": [
     "dannynelson <danny@goodeggs.com>",
@@ -53,11 +58,11 @@
     "prepublish": "./can_publish",
     "postpublish": "npm cache clean",
     "lint": "eslint 'src/**/*.js'  --ignore-path .gitignore",
-    "test:mocha": "NODE_ENV=test mocha --compilers=js:babel-register",
-    "test:mocha:all": "npm run test:mocha -- 'test/*.js'",
-    "test:single": "npm run test:mocha -- __TESTFILE__",
-    "test:watch:single": "npm run test:mocha -- --watch __TESTFILE__",
-    "test": "npm run lint && npm run test:mocha:all --"
+    "test:mocha": "npm run build && NODE_ENV=test mocha --compilers=js:babel-register",
+    "test:mocha:all": "npm run build && npm run test:mocha -- 'test/*.js'",
+    "test:single": "npm run build && npm run test:mocha -- __TESTFILE__",
+    "test:watch:single": "npm run build && npm run test:mocha -- --watch __TESTFILE__",
+    "test": "npm run build && npm run lint && npm run test:mocha:all --"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",

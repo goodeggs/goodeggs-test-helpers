@@ -1,5 +1,5 @@
 /* eslint-env goodeggs/server-side-test */
-import '../src';
+import '../build';
 
 import cp from 'child_process';
 import path from 'path';
@@ -7,7 +7,6 @@ import path from 'path';
 describe('exec_file_as_test', function () {
   it('allows you to run a js file and have it interpereted as a test', function (done) {
     this.timeout(100000);
-
     const file = path.join(__dirname, 'simpletest.js');
     const proc = cp.spawn('babel-node', [file]);
     let seenMagicalText = false;

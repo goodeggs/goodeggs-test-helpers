@@ -1,5 +1,5 @@
 /* eslint-env goodeggs/server-side-test */
-import '../src';
+import '../build';
 
 import Promise from 'bluebird';
 import geomoment from 'geomoment';
