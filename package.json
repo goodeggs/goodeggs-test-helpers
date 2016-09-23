@@ -58,7 +58,7 @@
     ]
   },
   "scripts": {
-    "build": "rm -rf build/ && babel src -d build && cp package.json can_publish build/",
+    "build": "rm -rf build/ && babel src -d build && cp package.json can_publish src/flow.js build/",
     "prepublish": "./can_publish",
     "postpublish": "npm cache clean",
     "lint": "eslint 'src/**/*.js'  --ignore-path .gitignore",
