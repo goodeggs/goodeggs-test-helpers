@@ -2,6 +2,7 @@
 
 declare function describe(title: string, fn: () => void): void;
 declare function given(title: string, fn: () => void): void;
+declare function context(title: string, fn: () => void): void;
 
 declare function before(title?: string, fn: (cb?:(err?:Error) => void) => mixed): void;
 declare function beforeEach(title?: string, fn: (cb?:(err?:Error) => void) => mixed): void;
