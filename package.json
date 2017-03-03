@@ -26,6 +26,7 @@
     "chai": "^3.3.0",
     "chai-as-promised": "^5.1.0",
     "chai-datetime": "^1.4.1",
+    "chai-json-schema": "^1.4.0",
     "chaid": "^1.0.2",
     "dirty-chai": "^1.2.2",
     "geomoment": "*",
