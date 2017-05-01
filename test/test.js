@@ -93,12 +93,13 @@ describe('mocha helpers', function () {
 
         it('can change the time with this.stubTime()', function () {
           const moment = geomoment.pacific('2012-11-22', 'YYYY-MM-DD');
-          this.stubTime(moment);
+          this.stubTime(moment.toDate());
           this.expect(Date.now()).to.equal(moment.valueOf());
         });
 
         it('will return whatever got passed into this.stubTime()', function () {
-          this.expect(this.stubTime(200)).to.equal(200);
+          const date = new Date(200);
+          this.expect(this.stubTime(date)).to.equal(date);
         });
       });
     });

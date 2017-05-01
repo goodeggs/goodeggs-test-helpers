@@ -29,7 +29,6 @@
     "chai-json-schema": "^1.4.0",
     "chaid": "^1.0.2",
     "dirty-chai": "^1.2.2",
-    "geomoment": "^0.6.1",
     "lodash.isfunction": "^3.0.8",
     "sinon": "^1.14.1",
     "sinon-chai": "^2.7.0"
@@ -46,6 +45,7 @@
     "eslint-plugin-lodash": "^1.10.3",
     "eslint-plugin-mocha": "^4.5.1",
     "flow-bin": "^0.32.0",
+    "geomoment": "^0.6.1",
     "in-publish": "^2.0.0",
     "mocha": "^2.4.5"
   },
