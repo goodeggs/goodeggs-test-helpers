@@ -3,7 +3,6 @@
 import assert from 'assert';
 import chai from 'chai';
 import sinon from 'sinon';
-import geomoment from 'geomoment';
 
 beforeEach('set assert', function () {
   this.assert = assert;
@@ -22,9 +21,9 @@ beforeEach('set up a sinon sandbox', function () {
   });
 
   const clock = this.clock = this.sinon.useFakeTimers(0, 'Date');
-  this.stubTime = function stubTime (time) {
-    clock.setSystemTime(geomoment(time).valueOf());
-    return time;
+  this.stubTime = function stubTime (date) {
+    clock.setSystemTime(date);
+    return date;
   };
 });
 
