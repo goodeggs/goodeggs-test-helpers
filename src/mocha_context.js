@@ -20,7 +20,11 @@ beforeEach('set up a sinon sandbox', function () {
     useFakeServer: false,
   });
 
-  const clock = this.clock = this.sinon.useFakeTimers(0, 'Date');
+  const clock = this.clock = this.sinon.useFakeTimers({
+    now: 0,
+    toFake: ['Date'],
+  });
+
   this.stubTime = function stubTime (date) {
     clock.setSystemTime(date);
     return date;
