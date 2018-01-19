@@ -1,7 +1,6 @@
 /* eslint-env goodeggs/server-side-test */
 import '../build';
 
-import Promise from 'bluebird';
 import geomoment from 'geomoment';
 
 describe('mocha helpers', function () {
@@ -33,7 +32,9 @@ describe('mocha helpers', function () {
   describe('withContext', function () {
     withContext('foo', 'bar');
     withContext('baz', function () {
-      return Promise.delay(3).return(this.foo);
+      return new Promise((resolve) =>
+        setTimeout(() => resolve(this.foo), 3)
+      );
     });
 
     it('puts the context on the context', function () {

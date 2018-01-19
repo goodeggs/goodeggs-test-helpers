@@ -1,6 +1,5 @@
 /* eslint-env goodeggs/server-side-test */
 
-import Promise from 'bluebird';
 import chai from 'chai';
 import isFunction from 'lodash.isfunction';
 import sinon from 'sinon';
@@ -23,10 +22,11 @@ globalVar.withContext = function (attribute, promiseFn) {
     let promise = promiseFn;
     if (isFunction(promiseFn)) promise = promiseFn.call(this); // eslint-disable-line
 
+    const context = this;
+
     return Promise.resolve(promise)
-      .bind(this)
       .then(function (result) {
-        this[attribute] = result;
+        context[attribute] = result;
       });
   });
 };
