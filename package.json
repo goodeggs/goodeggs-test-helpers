@@ -48,7 +48,7 @@
   },
   "peerDependencies": {
     "babel-register": "*",
-    "mocha": "*"
+    "mocha": ">=5"
   },
   "babel": {
     "presets": [
