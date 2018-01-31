@@ -1,4 +1,2 @@
-.editorconfig
-.gitignore
-.travis.yml
-test/
+*
+!lib/**
