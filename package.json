@@ -61,6 +61,7 @@
   },
   "scripts": {
     "build": "rm -rf lib/ && babel src -d lib && cp src/index.js.flow lib/",
+    "prepublishOnly": "yarn build",
     "lint": "eslint 'src/**/*.js'  --ignore-path .gitignore",
     "test:mocha": "npm run build && ./runtest.sh",
     "test:watch": "npm run build && ./runtest.sh --watch",
