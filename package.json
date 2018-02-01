@@ -62,9 +62,9 @@
   "scripts": {
     "build": "rm -rf lib/ && babel src -d lib && cp src/index.js.flow lib/",
     "lint": "eslint 'src/**/*.js'  --ignore-path .gitignore",
-    "test:mocha": "npm run build && ./run_tests.sh",
-    "test:watch": "npm run build && ./run_tests.sh --watch",
-    "test:coverage": "npm run build && ./run_tests.sh --coverage",
+    "test:mocha": "npm run build && ./runtest.sh",
+    "test:watch": "npm run build && ./runtest.sh --watch",
+    "test:coverage": "npm run build && ./runtest.sh --coverage",
     "test": "npm run lint && npm run test:mocha"
   },
   "publishConfig": {
@@ -84,6 +84,6 @@
     }
   },
   "bin": {
-    "run-tests": "./run_tests.sh"
+    "runtest": "./runtest.sh"
   }
 }

@@ -12,7 +12,7 @@ ISTANBUL_CMD="babel-node ./node_modules/istanbul/lib/cli cover --dir=.coverage .
 case "$1" in
   --watch) $MOCHA_CMD --watch --reporter=mocha-multi "${@: -1}"
     ;;
-  --coverage) $ISTANBUL_CMD
+  --coverage) $ISTANBUL_CMD "${@: -1}"
     ;;
   *) $MOCHA_CMD "${@: -1}"
 esac
