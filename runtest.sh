@@ -2,7 +2,6 @@
 set -e
 
 export NODE_ENV=test
-export BLUEBIRD_DEBUG=1
 export multi='mocha-osx-reporter=- dot=-'
 
 # TODO: remove --exit once all apps shutdown tests gracefully
