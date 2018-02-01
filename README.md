@@ -1,4 +1,6 @@
 # Goodeggs Test Helpers
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/goodeggs/goodeggs-test-helpers.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/goodeggs/goodeggs-test-helpers.svg?branch=master)](https://travis-ci.org/goodeggs/goodeggs-test-helpers)
 
 Basic setup used for all goodeggs tests.
