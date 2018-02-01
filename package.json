@@ -2,11 +2,10 @@
   "name": "goodeggs-test-helpers",
   "version": "3.0.0",
   "description": "Basic setup used for all goodeggs tests.",
-  "main": "server.js",
+  "main": "lib/index.js",
   "browser": {
-    "./server.js": "./browser.js",
-    "sinon": "./sinon_webpack_shim.js",
-    "./global.js": "./global_browser_shim.js"
+    "./lib/index.js": "./lib/browser.js",
+    "sinon": "./sinon_webpack_shim.js"
   },
   "author": "Good Eggs Inc.",
   "contributors": [
@@ -22,32 +21,34 @@
     "url": "git://github.com/goodeggs/goodeggs-test-helpers.git"
   },
   "dependencies": {
-    "bluebird": "^3.3.4",
-    "chai": "^3.3.0",
-    "chai-as-promised": "^5.1.0",
-    "chai-datetime": "^1.4.1",
-    "chai-json-schema": "^1.4.0",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chai-datetime": "^1.5.0",
     "chaid": "^1.0.2",
-    "dirty-chai": "^1.2.2",
-    "lodash.isfunction": "^3.0.8",
-    "sinon": "^4.1.6",
-    "sinon-chai": "^2.7.0"
+    "date-test-helpers": "^1.1.2",
+    "dirty-chai": "^2.0.1",
+    "istanbul": "^0.4.5",
+    "mocha-multi": "^1.0.0",
+    "mocha-osx-reporter": "^0.1.2",
+    "sinon": "^4.2.2",
+    "sinon-chai": "^2.14.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.6.5",
-    "babel-eslint": "^6.1.2",
-    "babel-plugin-add-module-exports": "^0.1.2",
-    "babel-plugin-transform-flow-strip-types": "^6.14.0",
-    "babel-preset-es2015": "^6.6.0",
-    "babel-register": "^6.7.2",
-    "eslint": "~3.1.1",
-    "eslint-plugin-goodeggs": "^3.3.1",
-    "eslint-plugin-lodash": "^1.10.3",
-    "eslint-plugin-mocha": "^4.5.1",
-    "flow-bin": "^0.32.0",
-    "geomoment": "^0.6.1",
-    "in-publish": "^2.0.0",
-    "mocha": "^2.4.5"
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "bunyan": "^1.8.12",
+    "eslint": "^4.16.0",
+    "eslint-plugin-goodeggs": "^6.0.0",
+    "flow-bin": "^0.64.0",
+    "mocha": "^5.0.0"
+  },
+  "peerDependencies": {
+    "babel-register": "*",
+    "mocha": ">=5"
   },
   "babel": {
     "presets": [
@@ -59,15 +60,12 @@
     ]
   },
   "scripts": {
-    "build": "rm -rf build/ && babel src -d build && cp package.json can_publish src/flow.js build/",
-    "prepublish": "./can_publish",
-    "postpublish": "npm cache clean",
+    "build": "rm -rf lib/ && babel src -d lib && cp src/index.js.flow lib/",
     "lint": "eslint 'src/**/*.js'  --ignore-path .gitignore",
-    "test:mocha": "npm run build && NODE_ENV=test mocha --compilers=js:babel-register",
-    "test:mocha:all": "npm run build && npm run test:mocha -- 'test/*.js'",
-    "test:single": "npm run build && npm run test:mocha -- __TESTFILE__",
-    "test:watch:single": "npm run build && npm run test:mocha -- --watch __TESTFILE__",
-    "test": "npm run build && npm run lint && npm run test:mocha:all --"
+    "test:mocha": "npm run build && ./runtest.sh",
+    "test:watch": "npm run build && ./runtest.sh --watch",
+    "test:coverage": "npm run build && ./runtest.sh --coverage",
+    "test": "npm run lint && npm run test:mocha"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
@@ -84,5 +82,8 @@
     "env": {
       "node": true
     }
+  },
+  "bin": {
+    "runtest": "./runtest.sh"
   }
 }
