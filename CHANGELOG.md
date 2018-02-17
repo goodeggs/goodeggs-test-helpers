@@ -1,3 +1,8 @@
+# [5.0.0](https://github.com/goodeggs/goodeggs-test-helpers/compare/v4.0.0...v5.0.0)
+
+### BREAKING CHANGES
+- `this.stubLogger({logger})` => `this.stubLogger(logger)`
+
 # [4.0.0](https://github.com/goodeggs/goodeggs-test-helpers/compare/v3.0.0...v4.0.0)
 
 ### BREAKING CHANGES
