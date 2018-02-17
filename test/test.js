@@ -69,7 +69,7 @@ describe('mocha helpers', function () {
 
     it('can stub logger', function () {
       const logger = bunyan.createLogger({name: 'myapp'});
-      this.stubLogger({logger});
+      this.stubLogger(logger);
       logger.info('foo bar');
       expect(logger.info).to.have.been.calledOnce();
     });

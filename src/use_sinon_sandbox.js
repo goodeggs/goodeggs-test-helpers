@@ -23,7 +23,7 @@ export default function useSinonSandbox () {
       return date;
     };
 
-    this.stubLogger = function ({logger} = {}) {
+    this.stubLogger = function (logger) {
       assert(logger != null, 'logger required');
       this.stub(logger, 'trace');
       this.stub(logger, 'debug');
