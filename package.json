@@ -30,7 +30,7 @@
     "istanbul": "1.0.0-alpha.2",
     "mocha-multi": "1.0.1",
     "mocha-osx-reporter": "0.1.2",
-    "sinon": "4.2.2",
+    "sinon": "4.2.3",
     "sinon-chai": "2.14.0"
   },
   "devDependencies": {
