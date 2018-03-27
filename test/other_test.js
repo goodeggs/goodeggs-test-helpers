@@ -1,7 +1,7 @@
 // @flow
 import {describe, it} from 'mocha';
 
-import {expect} from '../';
+import {expect} from '../lib';
 
 describe('other', function () {
   it('works', function () {
