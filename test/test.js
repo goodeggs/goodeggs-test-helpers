@@ -3,7 +3,7 @@ import {describe, beforeEach, it} from 'mocha';
 import dateTestHelpers from 'date-test-helpers';
 import bunyan from 'bunyan';
 
-import {expect, useSinonSandbox, sinon} from '../';
+import {expect, useSinonSandbox, sinon} from '../lib';
 
 describe('mocha helpers', function () {
   describe('chai expect', function () {

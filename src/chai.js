@@ -12,5 +12,4 @@ chai.use(sinonChai);
 chai.use(chaid);
 chai.use(chaiDateTime);
 
-const expect = chai.expect; // eslint-disable-line goodeggs/import-no-named-as-default-member
-export {expect};
+export default chai;
