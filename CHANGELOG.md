@@ -1,3 +1,7 @@
+# [5.1.1](https://github.com/goodeggs/goodeggs-test-helpers/compare/v5.1.0...v5.1.1)
+
+- Fix path to Sinon in browser environments
+
 # [5.0.0](https://github.com/goodeggs/goodeggs-test-helpers/compare/v4.0.0...v5.0.0)
 
 ### BREAKING CHANGES
