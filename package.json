@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "browser": {
     "./lib/index.js": "./lib/browser.js",
-    "sinon": "./sinon_webpack_shim.js"
+    "sinon": "./lib/sinon_webpack_shim.js"
   },
   "author": "Good Eggs Inc.",
   "contributors": [
