@@ -1,5 +1,4 @@
 // @flow
-// flow gen-flow-files did not work :(
 
 declare export function useSinonSandbox (): void;
 
@@ -152,16 +151,9 @@ declare type ExpectChain<T> = {
 
 declare export function expect<T>(actual: T, message?: string): ExpectChain<T>;
 
-declare function use(plugin: (chai: Object, utils: Object) => void): void;
-
-declare class assert {
+declare class Assert {
   static (expression: mixed, message?: string): void;
-  static fail(
-    actual: mixed,
-    expected: mixed,
-    message?: string,
-    operator?: string
-  ): void;
+  static fail(actual: mixed, expected: mixed, message?: string, operator?: string): void;
 
   static isOk(object: mixed, message?: string): void;
   static isNotOk(object: mixed, message?: string): void;
@@ -235,68 +227,76 @@ declare class assert {
   static notDeepProperty(obj: Object, prop: string, msg?: string): void;
 
   static propertyVal(
-    obj: Object,
-    prop: string,
-    val: mixed,
-    msg?: string
-  ): void;
+      obj: Object,
+      prop: string,
+      val: mixed,
+      msg?: string
+      ): void;
   static propertyNotVal(
-    obj: Object,
-    prop: string,
-    val: mixed,
-    msg?: string
-  ): void;
+      obj: Object,
+      prop: string,
+      val: mixed,
+      msg?: string
+      ): void;
 
   static deepPropertyVal(
-    obj: Object,
-    prop: string,
-    val: mixed,
-    msg?: string
-  ): void;
+      obj: Object,
+      prop: string,
+      val: mixed,
+      msg?: string
+      ): void;
   static deepPropertyNotVal(
-    obj: Object,
-    prop: string,
-    val: mixed,
-    msg?: string
-  ): void;
+      obj: Object,
+      prop: string,
+      val: mixed,
+      msg?: string
+      ): void;
 
   static lengthOf(exp: mixed, len: number, msg?: string): void;
 
   static throws<E>(
-    func: () => any,
-    err?: Class<E> | Error | RegExp | string,
-    errorMsgMatcher?: string | RegExp,
-    msg?: string
-  ): void;
+      func: () => any,
+      err?: Class<E> | Error | RegExp | string,
+      errorMsgMatcher?: string | RegExp,
+      msg?: string
+      ): void;
   static doesNotThrow<E>(
-    func: () => any,
-    err?: Class<E> | Error | RegExp | string,
-    errorMsgMatcher?: string | RegExp,
-    msg?: string
-  ): void;
+      func: () => any,
+      err?: Class<E> | Error | RegExp | string,
+      errorMsgMatcher?: string | RegExp,
+      msg?: string
+      ): void;
 
   static closeTo(
-    actual: number,
-    expected: number,
-    delta: number,
-    msg?: string
-  ): void;
+      actual: number,
+      expected: number,
+      delta: number,
+      msg?: string
+      ): void;
   static approximately(
-    actual: number,
-    expected: number,
-    delta: number,
-    msg?: string
-  ): void;
+      actual: number,
+      expected: number,
+      delta: number,
+      msg?: string
+      ): void;
 
   // chai-immutable
   static sizeOf(val: mixed, length: number): void;
-}
-
-declare var config: {
-  includeStack: boolean,
-  showDiff: boolean,
-  truncateThreshold: number
 };
+
+declare export var chai: {
+  expect: <T>(actual: T, message?: string) => ExpectChain<T>,
+
+  use: (plugin: (chai: Object, utils: Object) => void) => void,
+
+  assert: typeof Assert,
+
+  config: {
+    includeStack: boolean,
+    showDiff: boolean,
+    truncateThreshold: number
+  }
+}
 
 // ------------------------------
 // sinon
