@@ -1,3 +1,7 @@
+# [5.1.2](https://github.com/goodeggs/goodeggs-test-helpers/compare/v5.1.1...v5.1.2)
+
+- Add missing chai, chai-enzyme assertions to flowtype
+
 # [5.1.1](https://github.com/goodeggs/goodeggs-test-helpers/compare/v5.1.0...v5.1.1)
 
 - Fix path to Sinon in browser environments
