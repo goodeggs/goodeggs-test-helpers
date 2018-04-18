@@ -1,3 +1,7 @@
+# [5.1.3](https://github.com/goodeggs/goodeggs-test-helpers/compare/v5.1.2...v5.1.3)
+
+- Fix flowtype definitions
+
 # [5.1.2](https://github.com/goodeggs/goodeggs-test-helpers/compare/v5.1.1...v5.1.2)
 
 - Add missing chai, chai-enzyme assertions to flowtype
