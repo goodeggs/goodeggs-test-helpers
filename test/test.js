@@ -3,7 +3,7 @@ import {describe, beforeEach, it} from 'mocha';
 import dateTestHelpers from 'date-test-helpers';
 import bunyan from 'bunyan';
 
-import {expect, useSinonSandbox, sinon} from '../lib';
+import {expect, useSinonSandbox} from '../src';
 
 describe('mocha helpers', function () {
   describe('chai expect', function () {
@@ -34,7 +34,7 @@ describe('mocha helpers', function () {
   });
 
   describe('useSinonSandbox()', function () {
-    useSinonSandbox();
+    const {sandbox, stubLogger} = useSinonSandbox();
 
     beforeEach('create an object with methods', function () {
       this.foo = {
@@ -43,7 +43,7 @@ describe('mocha helpers', function () {
     });
 
     it('has a sinon sandbox and sinon-chai', function () {
-      this.stub(this.foo, 'bar');
+      sandbox.stub(this.foo, 'bar');
       this.foo.bar();
       expect(this.foo.bar).to.have.been.called();
     });
@@ -52,34 +52,27 @@ describe('mocha helpers', function () {
       expect();
     });
 
-    it('stubs the clock to the beginning of the UNIX epoch by default', function () {
+    it('can stub the clock', function () {
+      sandbox.useFakeTimers({now: 0});
       expect(Date.now()).to.equal(0);
     });
 
-    it('can change the time with this.stubTime()', function () {
+    it('can change the time with clock.setSystemTime()', function () {
+      const clock = sandbox.useFakeTimers({now: 0});
       const time = dateTestHelpers.pacific.time('2012-11-22 00:00:00');
-      this.stubTime(time);
+      clock.setSystemTime(time);
       expect(Date.now()).to.equal(time.valueOf());
-    });
-
-    it('will return whatever got passed into this.stubTime()', function () {
-      const date = new Date(200);
-      expect(this.stubTime(date)).to.equal(date);
     });
 
     it('can stub logger', function () {
       const logger = bunyan.createLogger({name: 'myapp'});
-      this.stubLogger(logger);
+      stubLogger(logger);
       logger.info('foo bar');
       expect(logger.info).to.have.been.calledOnce();
     });
-  });
 
-  describe('sinon', function () {
-    it('can use', function () {
-      const foo = {bar: sinon.stub()};
-      foo.bar();
-      expect(foo.bar).to.have.been.calledOnce();
+    it('can use matchers', function () {
+      expect(sandbox.match).to.be.a('function');
     });
   });
 });
