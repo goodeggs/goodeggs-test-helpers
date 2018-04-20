@@ -1,7 +1,5 @@
 // @flow
 
-declare export function useSinonSandbox (): void;
-
 // -------------------------------------------------
 // copied from flow-typed/chai and monkey-patched
 // -------------------------------------------------
@@ -282,7 +280,7 @@ declare class Assert {
 
   // chai-immutable
   static sizeOf(val: mixed, length: number): void;
-};
+}
 
 declare export var chai: {
   expect: <T>(actual: T, message?: string) => ExpectChain<T>,
@@ -497,8 +495,8 @@ declare interface SinonFakeTimers {
 
 declare interface SinonFakeTimersStatic {
   (): SinonFakeTimers;
-  (...timers: string[]): SinonFakeTimers;
-  (now: number, ...timers: string[]): SinonFakeTimers;
+  (now: number): SinonFakeTimers;
+  (config: {|+now?: number, +toFake?: Array<string>, +shouldAdvanceTime?: boolean|}): SinonFakeTimers;
 }
 
 declare interface SinonFakeUploadProgress {
@@ -706,8 +704,10 @@ declare interface SinonSandbox {
   spy: SinonSpyStatic;
   stub: SinonStubStatic;
   mock: SinonMockStatic;
+  match: SinonMatch;
   useFakeTimers: SinonFakeTimersStatic;
   useFakeXMLHttpRequest: SinonFakeXMLHttpRequestStatic;
+  useFakeTimers(): SinonFakeTimersStatic;
   useFakeServer(): SinonFakeServer;
   restore(): void;
   reset(): void;
@@ -731,7 +731,7 @@ declare interface SinonTestConfig {
   useFakeServer?: boolean;
 }
 
-declare export var sinon: {
+declare var sinon: {
   spy: SinonSpyStatic;
   stub: SinonStubStatic;
   expectation: SinonExpectationStatic;
@@ -753,3 +753,15 @@ declare export var sinon: {
   log(message: string): void;
   restore(object: any): void;
 };
+
+interface Logger {
+  trace(...*): mixed;
+  debug(...*): mixed;
+  info(...*): mixed;
+  warn(...*): mixed;
+  error(...*): mixed;
+  fatal(...*): mixed;
+  child(...*): mixed;
+}
+
+declare export function useSinonSandbox (): {|+sandbox: SinonSandbox, stubLogger: (logger: Logger) => void|};

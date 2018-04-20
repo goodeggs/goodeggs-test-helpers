@@ -1,3 +1,15 @@
+# [6.0.0](https://github.com/goodeggs/goodeggs-test-helpers/compare/v5.1.0...v6.0.0)
+
+### BREAKING CHANGES
+- `useSinonSandbox()` returns a `{sandbox, stubLogger}`
+- `this.stub` => `sandbox.stub`
+- `this.spy` => `sandbox.spy`
+- `const clock = sandbox.useFakeTimers()` to mock time
+- `this.stubTime()` => `clock.setSystemTime()`
+- `this.stubLogger()` => `stubLogger()`
+- `sinon.match()` => `sandbox.match()`
+- sinon no longer exported. Use `sandbox` from `{useSinonSandbox}` instead
+
 # [5.1.3](https://github.com/goodeggs/goodeggs-test-helpers/compare/v5.1.2...v5.1.3)
 
 - Fix flowtype definitions
