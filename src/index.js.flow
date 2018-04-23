@@ -402,7 +402,7 @@ declare interface SinonStub extends SinonSpy {
   callsArgOnAsync(index: number, context: any): SinonStub;
   callsArgWithAsync(index: number, ...args: Array<any>): SinonStub;
   callsArgOnWithAsync(index: number, context: any, ...args: Array<any>): SinonStub;
-  callsFake(func: (...args: Array<any>) => void): SinonStub;
+  callsFake(func: (...*) => mixed): SinonStub;
   get(func: () => any): SinonStub;
   set(func: (v: any) => mixed): SinonStub;
   onCall(n: number): SinonStub;

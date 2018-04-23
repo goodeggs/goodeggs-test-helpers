@@ -43,13 +43,13 @@ describe('mocha helpers', function () {
     });
 
     it('has a sinon sandbox and sinon-chai', function () {
-      sandbox.stub(this.foo, 'bar');
+      sandbox.stub(this.foo, 'bar').callsFake((n: number): number => n + 3);
       this.foo.bar();
       expect(this.foo.bar).to.have.been.called();
     });
 
     it('restores the sinon sandbox after each test', function () {
-      expect();
+      expect(this.foo.bar.callCount).not.to.be.ok();
     });
 
     it('can stub the clock', function () {

@@ -192,30 +192,28 @@ declare function afterEach(callback: (/* this: $npm$mocha$BeforeAndAfterContext,
 declare function afterEach(description: string, callback: (/* this: $npm$mocha$BeforeAndAfterContext, */ done: $npm$mocha$done) => mixed): void;
 
 declare module "mocha" {
-  declare export var mocha: typeof mocha;
-  declare export var describe: typeof describe;
-  declare export var xdescribe: typeof xdescribe;
-  declare export var context: typeof context;
-  declare export var suite: typeof suite;
-  declare export var it: typeof it;
-  declare export var xit: typeof xit;
-  declare export var test: typeof test;
-  declare export var specify: typeof specify;
+  declare export var mocha: $npm$mocha$Mocha;
+  declare export var describe: $npm$mocha$ContextDefinition;
+  declare export var xdescribe: $npm$mocha$ContextDefinition;
+  declare export var context: $npm$mocha$ContextDefinition;
+  declare export var suite: $npm$mocha$ContextDefinition;
+  declare export var it: $npm$mocha$TestDefinition;
+  declare export var xit: $npm$mocha$TestDefinition;
+  declare export var test: $npm$mocha$TestDefinition;
+  declare export var specify: $npm$mocha$TestDefinition;
 
-  declare export var run: typeof run;
+  declare export function run(): void;
 
-  declare export var setup: typeof setup;
-  declare export var teardown: typeof teardown;
-  declare export var suiteSetup: typeof suiteSetup;
-  declare export var suiteTeardown: typeof suiteTeardown;
-  declare export var before: typeof before;
-  declare export var before: typeof before;
-  declare export var after: typeof after;
-  declare export var after: typeof after;
-  declare export var beforeEach: typeof beforeEach;
-  declare export var beforeEach: typeof beforeEach;
-  declare export var afterEach: typeof afterEach;
-  declare export var afterEach: typeof afterEach;
-
-  declare export default $npm$mocha$Mocha;
+  declare export function setup(callback: (/* this: $npm$mocha$BeforeAndAfterContext, */ done: $npm$mocha$done) => mixed): void;
+  declare export function teardown(callback: (/* this: $npm$mocha$BeforeAndAfterContext, */ done: $npm$mocha$done) => mixed): void;
+  declare export function suiteSetup(callback: (/* this: $npm$mocha$HookCallbackContext, */ done: $npm$mocha$done) => mixed): void;
+  declare export function suiteTeardown(callback: (/* this: $npm$mocha$HookCallbackContext, */ done: $npm$mocha$done) => mixed): void;
+  declare export function before(callback: (/* this: $npm$mocha$HookCallbackContext, */ done: $npm$mocha$done) => mixed): void;
+  declare export function before(description: string, callback: (/* this: $npm$mocha$HookCallbackContext, */ done: $npm$mocha$done) => mixed): void;
+  declare export function after(callback: (/* this: $npm$mocha$HookCallbackContext, */ done: $npm$mocha$done) => mixed): void;
+  declare export function after(description: string, callback: (/* this: $npm$mocha$HookCallbackContext, */ done: $npm$mocha$done) => mixed): void;
+  declare export function beforeEach(callback: (/* this: $npm$mocha$BeforeAndAfterContext, */ done: $npm$mocha$done) => mixed): void;
+  declare export function beforeEach(description: string, callback: (/* this: $npm$mocha$BeforeAndAfterContext, */ done: $npm$mocha$done) => mixed): void;
+  declare export function afterEach(callback: (/* this: $npm$mocha$BeforeAndAfterContext, */ done: $npm$mocha$done) => mixed): void;
+  declare export function afterEach(description: string, callback: (/* this: $npm$mocha$BeforeAndAfterContext, */ done: $npm$mocha$done) => mixed): void;
 }
