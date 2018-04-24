@@ -44,7 +44,7 @@
     "eslint": "4.19.1",
     "eslint-plugin-goodeggs": "6.1.0",
     "flow-bin": "0.69.0",
-    "mocha": "5.1.0"
+    "mocha": "5.1.1"
   },
   "peerDependencies": {
     "babel-register": "*",
