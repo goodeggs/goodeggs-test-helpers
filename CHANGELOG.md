@@ -1,3 +1,11 @@
+# [6.1.0](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.0.1...v6.1.0)
+
+- Add Enzyme `className`, `props` type definitions
+
+# [6.0.1](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.0.0...v6.0.1)
+
+- Fix Sinon `callsFake` type definition
+
 # [6.0.0](https://github.com/goodeggs/goodeggs-test-helpers/compare/v5.1.0...v6.0.0)
 
 ### BREAKING CHANGES
