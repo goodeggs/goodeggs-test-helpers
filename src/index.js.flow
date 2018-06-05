@@ -709,7 +709,6 @@ declare interface SinonSandbox {
   match: SinonMatch;
   useFakeTimers: SinonFakeTimersStatic;
   useFakeXMLHttpRequest: SinonFakeXMLHttpRequestStatic;
-  useFakeTimers(): SinonFakeTimersStatic;
   useFakeServer(): SinonFakeServer;
   restore(): void;
   reset(): void;
