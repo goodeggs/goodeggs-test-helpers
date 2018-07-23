@@ -137,6 +137,7 @@ declare type ExpectChain<T> = {
 
   // chai-enzyme
   attr: (key: string, val?: any) => ExpectChain<T>,
+  blank: () => ExpectChain<T>,
   className: (val: string) => ExpectChain<T>,
   data: (key: string, val?: any) => ExpectChain<T>,
   descendants: (val: any) => ExpectChain<T>,
