@@ -1,3 +1,7 @@
+# [6.2.0](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.1.0...v6.2.0)
+
+- Add `.blank()` assertion to Chai type definition
+
 # [6.1.0](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.0.1...v6.1.0)
 
 - Add Enzyme `className`, `props` type definitions
