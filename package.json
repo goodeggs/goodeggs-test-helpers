@@ -1,6 +1,6 @@
 {
   "name": "goodeggs-test-helpers",
-  "version": "6.2.0",
+  "version": "6.2.1",
   "description": "Basic setup used for all goodeggs tests.",
   "main": "lib/index.js",
   "browser": {
