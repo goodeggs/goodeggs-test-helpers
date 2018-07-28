@@ -1,3 +1,7 @@
+# [6.2.1](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.1.0...v6.2.0)
+
+- Fix Flow v0.75.0 incompatibility
+
 # [6.2.0](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.1.0...v6.2.0)
 
 - Add `.blank()` assertion to Chai type definition
