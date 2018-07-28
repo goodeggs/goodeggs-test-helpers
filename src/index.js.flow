@@ -381,6 +381,7 @@ declare interface SinonSpyStatic {
 }
 
 declare interface SinonStub extends SinonSpy {
+  (...args: Array<any>): any;
   resetBehavior(): void;
   resetHistory(): void;
   usingPromise(promiseLibrary: any): SinonStub;
