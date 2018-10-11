@@ -150,6 +150,21 @@ declare module "chai" {
     className: (val: string) => ExpectChain<T>,
     text: (val: string) => ExpectChain<T>,
 
+    // chaid
+    id: (id: mixed) => ExpectChain<T>,
+    ids: (ids: mixed) => ExpectChain<T>,
+    unordered: ExpectChain<T>,
+
+    // chai-date-time
+    equalTime: (d: Date) => ExpectChain<T>,
+    beforeTime: (d: Date) => ExpectChain<T>,
+    afterTime: (d: Date) => ExpectChain<T>,
+    withinTime: (d: Date) => ExpectChain<T>,
+    equalDate: (d: Date) => ExpectChain<T>,
+    beforeDate: (d: Date) => ExpectChain<T>,
+    afterDate: (d: Date) => ExpectChain<T>,
+    withinDate: (d: Date) => ExpectChain<T>,
+
     // chai-karma-snapshot
     matchSnapshot: (lang?: any, update?: boolean, msg?: any) => ExpectChain<T>
   };
