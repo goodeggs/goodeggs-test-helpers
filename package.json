@@ -54,12 +54,6 @@
     "flow-bin": "^0.81.0",
     "mocha": "^5.2.0"
   },
-  "babel": {
-    "presets": [
-      "@babel/env",
-      "@babel/flow"
-    ]
-  },
   "eslintConfig": {
     "root": true,
     "parser": "babel-eslint",
