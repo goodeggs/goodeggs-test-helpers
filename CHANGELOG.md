@@ -1,3 +1,10 @@
+# [6.5.0](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.4.1...v6.5.0)
+
+- Add `createRollbarStub`, `createAnalyticsStub`, and `createLoggerStub`; the first two are mocks we commonly copy/paste between repositories; the latter is a factory we usually get from `useSinonSandbox`, but in a mutative stub pattern. This adapts each stub to use our more common factory pattern.
+- Remove first args to `before/after/beforeEach/afterEach` to fix Jest compatibility
+- Bump node to 8.11.4 on Travis
+- Update development scripts to be more standard
+
 # [6.2.1](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.1.0...v6.2.0)
 
 - Fix Flow v0.75.0 incompatibility
