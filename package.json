@@ -21,12 +21,11 @@
   },
   "scripts": {
     "build": "rm -rf lib/ && babel src -d lib",
-    "lint": "eslint 'src/**/*.js'  --ignore-path .gitignore",
+    "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
     "prepublishOnly": "yarn build",
     "test": "yarn run lint && flow && npm run test:mocha",
-    "test:coverage": "./runtest.sh --coverage",
-    "test:mocha": "./runtest.sh",
-    "test:watch": "./runtest.sh --watch"
+    "test:mocha": "mocha --require @babel/register --exclude 'node_modules/**' '**/?(*.)test.?(*.){js,jsx,ts,tsx}'",
+    "test:mocha:watch": "yarn run test:mocha --watch"
   },
   "dependencies": {
     "chai": "4.2.0",
@@ -71,6 +70,12 @@
         "files": ["src/use_sinon_sandbox.js"],
         "env": {
           "mocha": true
+        }
+      },
+      {
+        "files": ["babel.config.js"],
+        "rules": {
+          "goodeggs/import-no-commonjs": "off"
         }
       }
     ]
