@@ -1,6 +1,6 @@
 {
   "name": "goodeggs-test-helpers",
-  "version": "6.4.1",
+  "version": "6.5.0",
   "description": "Basic setup used for all goodeggs tests.",
   "author": "Good Eggs Inc.",
   "license": "UNLICENSED",
@@ -67,13 +67,17 @@
     },
     "overrides": [
       {
-        "files": ["src/use_sinon_sandbox.js"],
+        "files": [
+          "src/use_sinon_sandbox.js"
+        ],
         "env": {
           "mocha": true
         }
       },
       {
-        "files": ["babel.config.js"],
+        "files": [
+          "babel.config.js"
+        ],
         "rules": {
           "goodeggs/import-no-commonjs": "off"
         }
