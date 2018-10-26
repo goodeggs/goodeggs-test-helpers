@@ -1,3 +1,7 @@
+# [6.5.0](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.5.0...v6.5.1)
+
+- Fix flow typedefs
+
 # [6.5.0](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.4.1...v6.5.0)
 
 - Add `createRollbarStub`, `createAnalyticsStub`, and `createLoggerStub`; the first two are mocks we commonly copy/paste between repositories; the latter is a factory we usually get from `useSinonSandbox`, but in a mutative stub pattern. This adapts each stub to use our more common factory pattern.
