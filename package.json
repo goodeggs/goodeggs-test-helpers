@@ -20,7 +20,7 @@
     "node": ">=8"
   },
   "scripts": {
-    "build": "rm -rf lib/ && babel src -d lib",
+    "build": "rm -rf lib/ && babel src -d lib && flow-copy-source --verbose src/ lib/",
     "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
     "prepublishOnly": "yarn build",
     "test": "yarn run lint && flow && npm run test:mocha",
@@ -51,6 +51,7 @@
     "eslint": "4.19.1",
     "eslint-plugin-goodeggs": "7.1.0",
     "flow-bin": "^0.81.0",
+    "flow-copy-source": "^2.0.2",
     "mocha": "^5.2.0"
   },
   "eslintConfig": {
