@@ -50,7 +50,7 @@
     "bunyan": "1.8.12",
     "eslint": "4.19.1",
     "eslint-plugin-goodeggs": "7.1.0",
-    "flow-bin": "^0.81.0",
+    "flow-bin": "^0.88.0",
     "flow-copy-source": "^2.0.2",
     "mocha": "^5.2.0"
   },
