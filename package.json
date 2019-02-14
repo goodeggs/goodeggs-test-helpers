@@ -26,6 +26,7 @@
     "test": "yarn run lint && flow && npm run test:mocha",
     "test:mocha": "mocha --require @babel/register --exclude 'node_modules/**' '**/?(*.)test.?(*.){js,jsx,ts,tsx}'",
     "test:mocha:watch": "yarn run test:mocha --watch"
+    "postversion": "git push --follow-tags",
   },
   "dependencies": {
     "chai": "4.2.0",
