@@ -8,7 +8,7 @@ import assert from 'assert';
  *
  * NOTE: Only use this in a Mocha environment, it's not guaranteed to work in Jest.
  */
-export default function useSinonSandbox () {
+export default function useSinonSandbox() {
   const sandbox = sinon.createSandbox();
 
   const stubLogger = (logger: Object) => {
@@ -23,7 +23,7 @@ export default function useSinonSandbox () {
   };
 
   // $FlowFixMe(ndhoule): Flow doesn't know it, but this is defined.
-  afterEach(function () {
+  afterEach(function() {
     sandbox.restore();
   });
 

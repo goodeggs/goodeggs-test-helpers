@@ -1,11 +1,11 @@
 // @flow
 type Analytics = {
-  alias ({previousId: string, userId: string}): void;
-  group ({groupId: string, traits?: {}}): void;
-  identify ({userId: string, traits?: {}}): void;
-  page ({name: string, properties?: {}}): void;
-  screen ({name: string, properties?: {}}): void;
-  track ({event: string, properties?: {}}): void;
+  alias({previousId: string, userId: string}): void,
+  group({groupId: string, traits?: {}}): void,
+  identify({userId: string, traits?: {}}): void,
+  page({name: string, properties?: {}}): void,
+  screen({name: string, properties?: {}}): void,
+  track({event: string, properties?: {}}): void,
 };
 
 /**
