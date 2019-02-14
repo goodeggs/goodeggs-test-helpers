@@ -1463,9 +1463,9 @@ eslint-plugin-flowtype@^3.0.0:
     lodash "^4.17.11"
 
 eslint-plugin-goodeggs@^7.3.1:
-  version "7.3.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-goodeggs/-/eslint-plugin-goodeggs-7.3.1.tgz#c09bb72b46a5788b2a2bc442dd1c36821c0e18c2"
-  integrity sha512-4tIBMEZ5XGGmvj6KLuXLrXaMg0J+9XEB7Y4S7Br6a176+8Xaww4YpCFhtx8fjsP0mg5A9cA6OYVzB54vL5AN/A==
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-goodeggs/-/eslint-plugin-goodeggs-7.4.0.tgz#2978d7bf596e6ba531ce40dfe08fedd58041b269"
+  integrity sha512-b+twUMQCx29jRBmEYOuVPFYhVqmozBRwaYKS9RwiQHBVSZAW2HWvhn9bfBSqQEYFcB5EjAbEhbCJJpqGi+ASmA==
   dependencies:
     eslint-plugin-flowtype "^3.0.0"
     eslint-plugin-import "^v2.14.0"
@@ -1935,11 +1935,7 @@ glob@^7.0.0, glob@^7.0.3, glob@^7.1.2, glob@^7.1.3:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-globals@^11.1.0:
-  version "11.4.0"
-  resolved "https://registry.npmjs.org/globals/-/globals-11.4.0.tgz#b85c793349561c16076a3c13549238a27945f1bc"
-
-globals@^11.7.0:
+globals@^11.1.0, globals@^11.7.0:
   version "11.7.0"
   resolved "https://registry.npmjs.org/globals/-/globals-11.7.0.tgz#a583faa43055b1aca771914bf68258e2fc125673"
 
