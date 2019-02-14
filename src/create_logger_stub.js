@@ -1,13 +1,13 @@
 // @flow
 // `goodeggs-server/logger`-compatible interface
 type Logger = {
-  child (opts: Object): Logger;
-  debug (...params: Array<any>): void;
-  error (...params: Array<any>): void;
-  fatal (...params: Array<any>): void;
-  info (...params: Array<any>): void;
-  trace (...params: Array<any>): void;
-  warn (...params: Array<any>): void;
+  child(opts: Object): Logger,
+  debug(...params: Array<any>): void,
+  error(...params: Array<any>): void,
+  fatal(...params: Array<any>): void,
+  info(...params: Array<any>): void,
+  trace(...params: Array<any>): void,
+  warn(...params: Array<any>): void,
 };
 
 /**
