@@ -1,3 +1,18 @@
+# [Changes since last deploy](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.5.2...master)
+
+# [v6.5.1](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.5.1...v6.5.2)
+
+## Bug fixes
+
+- Load dependencies from public node registry
+- Run tests in CI
+
+## Other
+
+- Build for Node 8
+- Deploy from Travis
+- Format with Prettier
+
 # [6.5.0](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.5.0...v6.5.1)
 
 - Fix flow typedefs
