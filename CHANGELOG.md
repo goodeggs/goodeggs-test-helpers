@@ -1,6 +1,12 @@
 # [Changes since last deploy](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.5.2...master)
 
-# [v6.5.1](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.5.1...v6.5.2)
+# [v6.5.2](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.5.1...v6.5.2)
+
+## Bug fixes
+
+- Build for browser as well as node
+
+# [v6.5.1](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.5.0...v6.5.1)
 
 ## Bug fixes
 
@@ -13,34 +19,34 @@
 - Deploy from Travis
 - Format with Prettier
 
-# [6.5.0](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.5.0...v6.5.1)
+# [v6.5.0](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.4.1...v6.5.0)
 
 - Fix flow typedefs
 
-# [6.5.0](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.4.1...v6.5.0)
+# [v6.4.1](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.2.1...v6.4.1)
 
 - Add `createRollbarStub`, `createAnalyticsStub`, and `createLoggerStub`; the first two are mocks we commonly copy/paste between repositories; the latter is a factory we usually get from `useSinonSandbox`, but in a mutative stub pattern. This adapts each stub to use our more common factory pattern.
 - Remove first args to `before/after/beforeEach/afterEach` to fix Jest compatibility
 - Bump node to 8.11.4 on Travis
 - Update development scripts to be more standard
 
-# [6.2.1](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.1.0...v6.2.0)
+# [v6.2.1](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.2.0...v6.2.1)
 
 - Fix Flow v0.75.0 incompatibility
 
-# [6.2.0](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.1.0...v6.2.0)
+# [v6.2.0](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.1.0...v6.2.0)
 
 - Add `.blank()` assertion to Chai type definition
 
-# [6.1.0](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.0.1...v6.1.0)
+# [v6.1.0](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.0.1...v6.1.0)
 
 - Add Enzyme `className`, `props` type definitions
 
-# [6.0.1](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.0.0...v6.0.1)
+# [v6.0.1](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.0.0...v6.0.1)
 
 - Fix Sinon `callsFake` type definition
 
-# [6.0.0](https://github.com/goodeggs/goodeggs-test-helpers/compare/v5.1.0...v6.0.0)
+# [v6.0.0](https://github.com/goodeggs/goodeggs-test-helpers/compare/v5.1.0...v6.0.0)
 
 ### BREAKING CHANGES
 
