@@ -1,4 +1,10 @@
-# [Changes since last deploy](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.5.2...master)
+# [Changes since last deploy](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.5.3...master)
+
+# [v6.5.3](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.5.2...v6.5.3)
+
+## Bug fixes
+
+- Fix deploy from travis
 
 # [v6.5.2](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.5.1...v6.5.2)
 
