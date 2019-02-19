@@ -14,6 +14,8 @@ Goodeggs tests use [chai](http://chaijs.com/), with a bunch of plugins ready for
 
 ## Contributing
 
+Please follow our [Code of Conduct](CODE_OF_CONDUCT.md) when contributing to this project.
+
 ```
 yarn install
 yarn test
@@ -27,3 +29,7 @@ Remember to update the [changelog](CHANGELOG.md)!
 ```
 yarn version
 ```
+
+## License
+
+[MIT](License.md)
