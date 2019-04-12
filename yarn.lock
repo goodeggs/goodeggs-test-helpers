@@ -2843,9 +2843,10 @@ mkdirp@0.5.1, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.1:
   dependencies:
     minimist "0.0.8"
 
-mocha-multi@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/mocha-multi/-/mocha-multi-1.0.1.tgz#328d62bb947113526a70ba477abc33213c110975"
+mocha-multi@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/mocha-multi/-/mocha-multi-1.1.0.tgz#5081f0f1f9d63ceb36791b54576d219d8e546649"
+  integrity sha512-arxYYafYVx/FEmA9xk8lw2nhc57Ld227YqX1yBYVcTQAeOhCBsvI7kIEeoxMcmwWOT1Ed+3C60Ambng4n2xRuw==
   dependencies:
     debug "^3.1.0"
     is-string "^1.0.4"
