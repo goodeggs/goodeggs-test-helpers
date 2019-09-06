@@ -654,11 +654,10 @@
     "@babel/plugin-transform-flow-strip-types" "^7.0.0"
 
 "@babel/register@^7.0.0":
-  version "7.5.5"
-  resolved "https://registry.yarnpkg.com/@babel/register/-/register-7.5.5.tgz#40fe0d474c8c8587b28d6ae18a03eddad3dac3c1"
-  integrity sha512-pdd5nNR+g2qDkXZlW1yRCWFlNrAn2PPdnZUB72zjX4l1Vv4fMRRLwyf+n/idFCLI1UgVGboUU8oVziwTBiyNKQ==
+  version "7.6.0"
+  resolved "https://registry.yarnpkg.com/@babel/register/-/register-7.6.0.tgz#76b6f466714680f4becafd45beeb2a7b87431abf"
+  integrity sha512-78BomdN8el+x/nkup9KwtjJXuptW5oXMFmP11WoM2VJBjxrKv4grC3qjpLL8RGGUYUGsm57xnjYFM2uom+jWUQ==
   dependencies:
-    core-js "^3.0.0"
     find-cache-dir "^2.0.0"
     lodash "^4.17.13"
     mkdirp "^0.5.1"
@@ -1322,11 +1321,6 @@ core-js-pure@3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.1.2.tgz#62fc435f35b7374b9b782013cdcb2f97e9f6dffa"
   integrity sha512-5ckIdBF26B3ldK9PM177y2ZcATP2oweam9RskHSoqfZCrJ2As6wVg8zJ1zTriFsZf6clj/N1ThDFRGaomMsh9w==
-
-core-js@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.0.0.tgz#a8dbfa978d29bfc263bfb66c556d0ca924c28957"
-  integrity sha512-WBmxlgH2122EzEJ6GH8o9L/FeoUKxxxZ6q6VUxoTlsE4EvbTWKJb447eyVxTEuq0LpXjlq/kCB2qgBvsYRkLvQ==
 
 core-util-is@~1.0.0:
   version "1.0.2"
@@ -2848,12 +2842,7 @@ lodash@4.17.10:
   version "4.17.10"
   resolved "https://registry.npmjs.org/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
 
-lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.4:
-  version "4.17.14"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.14.tgz#9ce487ae66c96254fe20b599f21b6816028078ba"
-  integrity sha512-mmKYbW3GLuJeX+iGP+Y7Gp1AiGHGbXHCOh/jZmrawMmsE7MS4znI3RL2FsjbqOyMayHInjOeykW7PEajUk1/xw==
-
-lodash@^4.17.15:
+lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.15, lodash@^4.17.4:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
