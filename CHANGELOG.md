@@ -1,4 +1,38 @@
-# [Changes since last deploy](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.5.3...master)
+# [Changes since last deploy](https://github.com/goodeggs/goodeggs-test-helpers/compare/v7.0.0...master)
+
+# [v7.0.0](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.5.3...v7.0.0)
+
+### BREAKING CHANGES
+
+Remove exported `runtest` "binary".
+
+To replace its usage with an equivalent inlined command, add a dependency on `nyc`:
+
+```
+yarn add --dev nyc
+```
+
+add a `_mocha` script that runs
+
+```
+NODE_ENV=test yarn run nyc --report-dir=.coverage --temp-directory=.coverage/.nyc_output --reporter=lcov --reporter=text-summary mocha --require=@babel/register --exit
+```
+
+(This assumes you're using Babel 7; otherwise change `@babel/register` to `babel-register`.)
+
+and replace uses of `runtest` with `yarn run _mocha`.
+
+Finally, to continue [conforming to best
+practices](https://github.com/goodeggs/standards-and-best-practices/blob/db91def5e9a8440cfa2f5c156af5ab8f0b3e488a/javascript/package-scripts.md#all-applications),
+include a `runtest` package script that runs:
+
+```
+yarn run _mocha
+```
+
+[See
+here](https://github.com/goodeggs/fulfillment-options-api/pull/653/commits/b5ef78c18e8cd3b1f3470a4e55c8bd05cbd93603#diff-7ae45ad102eab3b6d7e7896acd08c427a9b25b346470d7bc6507b6481575d519)
+for an example.
 
 # [v6.5.3](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.5.2...v6.5.3)
 
