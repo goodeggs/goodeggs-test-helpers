@@ -1627,8 +1627,8 @@ eslint-plugin-mocha@^5.2.0:
     ramda "^0.25.0"
 
 eslint-plugin-prettier@^3.0.1:
-  version "3.1.4"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-3.1.4.tgz#168ab43154e2ea57db992a2cd097c828171f75c2"
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-3.3.1.tgz#7079cfa2497078905011e6f82e8dd8453d1371b7"
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
