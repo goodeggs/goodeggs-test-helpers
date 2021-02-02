@@ -20,16 +20,10 @@
     "build": "yarn run build:clean && yarn run build:transpile",
     "build:clean": "rm -rf lib",
     "build:transpile": "babel src --out-dir lib --copy-files",
-    "lint": "yarn run lint:src && yarn run lint:prettier",
-    "lint:src": "yarn run lint:src:glob '**/*.{js,jsx,ts,tsx}'",
-    "lint:src:glob": "eslint --ignore-path .eslintignore",
-    "lint:prettier": "yarn run lint:prettier:glob '**/*.{yml,json,md,gql,graphql,flow}'",
-    "lint:prettier:glob": "prettier --ignore-path .eslintignore --list-different",
-    "fmt": "yarn run fmt:src && yarn run fmt:prettier",
-    "fmt:src": "yarn run fmt:src:glob '**/*.{js,jsx,ts,tsx}'",
-    "fmt:src:glob": "eslint --ignore-path .eslintignore --fix",
-    "fmt:prettier": "yarn run fmt:prettier:glob '**/*.{yml,json,md,gql,graphql,flow}'",
-    "fmt:prettier:glob": "prettier --ignore-path .eslintignore --write",
+    "lint": "yarn run lint:es",
+    "lint:es": "getk run lint-es",
+    "lint:fix": "yarn run lint:fix:es",
+    "lint:fix:es": "getk run fix-es",
     "prepublishOnly": "yarn run build",
     "postversion": "git push --follow-tags",
     "tdd": "yarn run test:mocha --watch",
@@ -56,65 +50,10 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-flow": "^7.0.0",
     "@babel/register": "^7.0.0",
-    "babel-eslint": "^10.0.1",
+    "@goodeggs/toolkit": "^3.0.1",
     "bunyan": "1.8.12",
-    "eslint": "^5.13.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-goodeggs": "^7.3.1",
-    "eslint-plugin-prettier": "^3.0.1",
     "flow-bin": "^0.133.0",
-    "husky": "^3.0.4",
     "leasot": "^9.1.0",
-    "lint-staged": "^9.2.3",
-    "mocha": "^6.2.3",
-    "prettier": "^1.16.3"
-  },
-  "eslintConfig": {
-    "root": true,
-    "parser": "babel-eslint",
-    "plugins": [
-      "goodeggs"
-    ],
-    "extends": [
-      "plugin:goodeggs/goodeggs",
-      "prettier",
-      "plugin:prettier/recommended"
-    ],
-    "env": {
-      "node": true
-    },
-    "overrides": [
-      {
-        "files": [
-          "src/use_sinon_sandbox.js"
-        ],
-        "env": {
-          "mocha": true
-        }
-      },
-      {
-        "files": [
-          "babel.config.js"
-        ],
-        "rules": {
-          "goodeggs/import-no-commonjs": "off"
-        }
-      }
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "yarn run fmt:src:glob",
-      "git add"
-    ],
-    "*.{yml,json,md,gql,graphql,flow}": [
-      "yarn run fmt:prettier:glob",
-      "git add"
-    ]
+    "mocha": "^6.2.3"
   }
 }

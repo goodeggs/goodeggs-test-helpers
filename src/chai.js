@@ -1,5 +1,5 @@
 // @flow
-import chai from 'chai'; // eslint-disable-line goodeggs/import-order, goodeggs/import-default
+import chai from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 import chaid from 'chaid';
 import dirtyChai from 'dirty-chai';
