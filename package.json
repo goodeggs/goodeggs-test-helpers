@@ -14,7 +14,7 @@
     "always-auth": true
   },
   "engines": {
-    "node": "^14.15.4"
+    "node": ">=8"
   },
   "scripts": {
     "build": "yarn run build:clean && yarn run build:transpile",
