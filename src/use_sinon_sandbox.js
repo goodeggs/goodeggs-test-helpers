@@ -23,7 +23,7 @@ export default function useSinonSandbox() {
   };
 
   // $FlowFixMe(ndhoule): Flow doesn't know it, but this is defined.
-  afterEach(function() {
+  afterEach(function () {
     sandbox.restore();
   });
 
