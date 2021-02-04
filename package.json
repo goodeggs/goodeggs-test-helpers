@@ -52,7 +52,7 @@
     "@babel/register": "^7.0.0",
     "@goodeggs/toolkit": "^3.0.1",
     "bunyan": "1.8.12",
-    "flow-bin": "^0.133.0",
+    "flow-bin": "^0.144.0",
     "leasot": "^9.1.0",
     "mocha": "^6.2.3"
   }
