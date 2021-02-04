@@ -1,4 +1,3 @@
-// @flow
 import {describe, beforeEach, it} from 'mocha';
 import dateTestHelpers from 'date-test-helpers';
 import bunyan from 'bunyan';
