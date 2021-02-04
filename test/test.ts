@@ -24,13 +24,6 @@ describe('mocha helpers', function () {
         dateTestHelpers.pacific.time('2015-04-01 00:00:00'),
       );
     });
-
-    it('has chai-id', function () {
-      expect({_id: 'foo'}).to.have.id('foo');
-      expect([{id: 'a'}, {id: 'b'}]).to.have.ids(['a', 'b']);
-      expect([{id: 'a'}, {id: 'b'}]).to.have.same.unordered.ids([{id: 'b'}, {id: 'a'}]);
-      expect([{id: 'a'}, {id: 'b'}]).to.include.same.ids([{id: 'a'}]);
-    });
   });
 
   describe('useSinonSandbox()', function () {
