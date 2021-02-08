@@ -1,6 +1,6 @@
 {
   "name": "goodeggs-test-helpers",
-  "version": "8.0.0",
+  "version": "8.0.1",
   "description": "Basic setup used for all goodeggs tests.",
   "author": "Good Eggs Inc.",
   "license": "MIT",
@@ -11,7 +11,7 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
-    "always-auth": true
+    "access": "public"
   },
   "engines": {
     "node": ">=8"
@@ -60,7 +60,6 @@
     "@goodeggs/tsconfig": "^1.0.0",
     "@types/bunyan": "^1.8.6",
     "@types/mocha": "^8.2.0",
-    "@typescript-eslint/parser": "^4.14.2",
     "bunyan": "1.8.12",
     "leasot": "^9.1.0",
     "mocha": "^6.2.3",
