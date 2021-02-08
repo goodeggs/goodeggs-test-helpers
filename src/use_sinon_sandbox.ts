@@ -1,6 +1,7 @@
-// @flow
-import sinon from 'sinon';
+import sinon, {SinonSandbox} from 'sinon';
 import assert from 'assert';
+
+import {Logger} from './create_logger_stub';
 
 /**
  * Create a Sinon sandbox that resets itself between each test. Also returns a goodeggs-logger stub
@@ -8,10 +9,13 @@ import assert from 'assert';
  *
  * NOTE: Only use this in a Mocha environment, it's not guaranteed to work in Jest.
  */
-export default function useSinonSandbox() {
+export default function useSinonSandbox(): {
+  sandbox: SinonSandbox;
+  stubLogger: (logger: Logger) => void;
+} {
   const sandbox = sinon.createSandbox();
 
-  const stubLogger = (logger: Object) => {
+  const stubLogger = (logger: Logger) => {
     assert(logger != null, 'logger required');
     sandbox.stub(logger, 'trace');
     sandbox.stub(logger, 'debug');
@@ -22,7 +26,6 @@ export default function useSinonSandbox() {
     sandbox.stub(logger, 'child').returns(logger);
   };
 
-  // $FlowFixMe(ndhoule): Flow doesn't know it, but this is defined.
   afterEach(function () {
     sandbox.restore();
   });

@@ -1,4 +1,14 @@
-# [Changes since last deploy](https://github.com/goodeggs/goodeggs-test-helpers/compare/v7.0.0...master)
+# [Changes since last deploy](https://github.com/goodeggs/goodeggs-test-helpers/compare/v8.0.0...master)
+
+# [v8.0.0](https://github.com/goodeggs/goodeggs-test-helpers/compare/v7.0.0...v8.0.0)
+
+### BREAKING CHANGES
+
+- Remove `chaid` which was an unsafe ID assertion library with no types
+
+## Other
+
+- Ported to Typescript
 
 # [v7.0.0](https://github.com/goodeggs/goodeggs-test-helpers/compare/v6.5.3...v7.0.0)
 

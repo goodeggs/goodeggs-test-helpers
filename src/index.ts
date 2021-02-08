@@ -1,4 +1,3 @@
-// @flow
 import chai from './chai';
 
 export {default as createAnalyticsStub} from './create_analytics_stub';
