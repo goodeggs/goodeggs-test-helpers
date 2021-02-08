@@ -17,9 +17,8 @@
     "node": ">=8"
   },
   "scripts": {
-    "build": "yarn run build:clean && yarn run build:es && yarn run build:types",
-    "build:clean": "rm -rf lib",
-    "build:es": "babel src --out-dir lib --copy-files --extensions=.ts,.js,.jsx,.tsx",
+    "build": "yarn run build:es && yarn run build:types",
+    "build:es": "babel src --out-dir lib --copy-files --delete-dir-on-start --extensions=.ts,.js,.jsx,.tsx",
     "build:types": "tsc --project tsconfig.declarations.json",
     "lint": "yarn run lint:es",
     "lint:es": "getk run lint-es",

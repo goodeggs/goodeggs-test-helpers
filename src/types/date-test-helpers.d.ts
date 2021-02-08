@@ -1,3 +1,4 @@
+// TODO Replace with date-test-helpers type when available
 declare module 'date-test-helpers' {
   interface TzidMethods {
     time: (iso8601DateTime: string) => Date;

@@ -1,4 +1,5 @@
 // `goodeggs-server/logger`-compatible interface
+// TODO Replace with actual goodeggs-logger type once it exists
 export type Logger = {
   child(opts: {[key: string]: unknown}): Logger;
   debug(...params: Array<unknown>): void;
@@ -12,7 +13,7 @@ export type Logger = {
 /**
  * Creates a goodeggs-server/Logger-compatible stub.
  */
-const stubLogger = (overrides?: Partial<Logger>): Logger => {
+const createLoggerStub = (overrides?: Partial<Logger>): Logger => {
   const logger: Logger = {
     child: (() => logger) as Logger['child'],
     debug: () => {},
@@ -27,4 +28,4 @@ const stubLogger = (overrides?: Partial<Logger>): Logger => {
   return logger;
 };
 
-export default stubLogger;
+export default createLoggerStub;
