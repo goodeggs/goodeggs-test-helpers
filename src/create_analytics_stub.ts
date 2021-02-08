@@ -1,11 +1,11 @@
-type Analytics = {
-  alias(arg0: {previousId: string; userId: string}): void;
-  group(arg0: {groupId: string; traits?: Record<string, unknown>}): void;
-  identify(arg0: {userId: string; traits?: Record<string, unknown>}): void;
-  page(arg0: {name: string; properties?: Record<string, unknown>}): void;
-  screen(arg0: {name: string; properties?: Record<string, unknown>}): void;
-  track(arg0: {event: string; properties?: Record<string, unknown>}): void;
-};
+interface Analytics {
+  alias(args: {previousId: string; userId: string}): void;
+  group(args: {groupId: string; traits?: Record<string, unknown>}): void;
+  identify(args: {userId: string; traits?: Record<string, unknown>}): void;
+  page(args: {name: string; properties?: Record<string, unknown>}): void;
+  screen(args: {name: string; properties?: Record<string, unknown>}): void;
+  track(args: {event: string; properties?: Record<string, unknown>}): void;
+}
 
 /**
  * Creates an analytics.js (window.analytics)-compatible stub.
