@@ -11,19 +11,4 @@ module.exports = {
     ],
     '@babel/typescript',
   ],
-  env: {
-    test: {
-      presets: [
-        [
-          '@babel/preset-env',
-          {
-            modules: 'commonjs',
-            targets: {
-              node: 'current',
-            },
-          },
-        ],
-      ],
-    },
-  },
 };
