@@ -1,5 +1,3 @@
-import {$PropertyType} from 'utility-types';
-
 // `goodeggs-server/logger`-compatible interface
 export type Logger = {
   child(opts: {[key: string]: unknown}): Logger;
@@ -16,7 +14,7 @@ export type Logger = {
  */
 const stubLogger = (overrides?: Partial<Logger>): Logger => {
   const logger: Logger = {
-    child: (() => logger) as $PropertyType<Logger, 'child'>,
+    child: (() => logger) as Logger['child'],
     debug: () => {},
     error: () => {},
     fatal: () => {},
