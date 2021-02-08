@@ -1,4 +1,4 @@
-# Goodeggs Test Helpers
+# Good Eggs Test Helpers
 
 [![Build Status](https://travis-ci.org/goodeggs/goodeggs-test-helpers.svg?branch=master)](https://travis-ci.org/goodeggs/goodeggs-test-helpers)
 
@@ -6,11 +6,11 @@ Basic setup used for all Good Eggs tests.
 
 ## Test structure
 
-Goodeggs tests use the BDD testing DSL from [mocha](https://mochajs.org/), with a few extras.
+Good Eggs tests use the BDD testing DSL from [mocha](https://mochajs.org/), with a few extras.
 
 ## Assertions
 
-Goodeggs tests use [chai](http://chaijs.com/), with a bunch of plugins ready for you.
+Good Eggs tests use [chai](http://chaijs.com/), with a bunch of plugins ready for you.
 
 ## Contributing
 
@@ -21,13 +21,15 @@ yarn install
 yarn test
 ```
 
-## Deploying a new version
+## Releasing
 
-This module is automatically deployed when a version tag bump is detected by travis.
-Remember to update the [changelog](CHANGELOG.md)!
+To release a new version of this module, use yarn to bump the version
+in `package.json` and create a git tag, then push. This will automatically
+get published to the NPM registry via CI.
 
-```
-yarn version
+```sh
+yarn version --new-version=<major|minor|patch|premajor|preminor|prepatch>
+git push --follow-tags
 ```
 
 ## License
