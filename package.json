@@ -60,7 +60,6 @@
     "@goodeggs/tsconfig": "^1.0.0",
     "@types/bunyan": "^1.8.6",
     "@types/mocha": "^8.2.0",
-    "@typescript-eslint/parser": "^4.14.2",
     "bunyan": "1.8.12",
     "leasot": "^9.1.0",
     "mocha": "^6.2.3",
