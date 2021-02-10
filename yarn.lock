@@ -1114,8 +1114,8 @@
     "@types/chai" "*"
 
 "@types/chai@*", "@types/chai@^4.2.14":
-  version "4.2.14"
-  resolved "https://registry.npmjs.org/@types/chai/-/chai-4.2.14.tgz#44d2dd0b5de6185089375d976b4ec5caf6861193"
+  version "4.2.15"
+  resolved "https://registry.yarnpkg.com/@types/chai/-/chai-4.2.15.tgz#b7a6d263c2cecf44b6de9a051cf496249b154553"
 
 "@types/color-name@^1.1.1":
   version "1.1.1"
