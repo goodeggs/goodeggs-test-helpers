@@ -56,7 +56,7 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-typescript": "^7.12.7",
     "@babel/register": "^7.0.0",
-    "@goodeggs/toolkit": "^3.0.1",
+    "@goodeggs/toolkit": "^4.0.1",
     "@goodeggs/tsconfig": "^1.0.0",
     "@types/bunyan": "^1.8.6",
     "@types/mocha": "^8.2.0",
