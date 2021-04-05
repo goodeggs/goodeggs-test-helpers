@@ -4219,9 +4219,9 @@ simple-git@^1.85.0:
   dependencies:
     debug "^4.0.1"
 
-sinon-chai@3.5.0:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/sinon-chai/-/sinon-chai-3.5.0.tgz#c9a78304b0e15befe57ef68e8a85a00553f5c60e"
+sinon-chai@3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/sinon-chai/-/sinon-chai-3.6.0.tgz#25bd59a37ef8990245e085a40f1f79d6bf023b7a"
 
 sinon@^10.0.0:
   version "10.0.0"
