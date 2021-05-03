@@ -11,6 +11,7 @@ export {
   SinonMock,
   SinonFakeTimers,
   SinonSandbox,
+  SinonStubbedInstance,
 } from './use_sinon_sandbox';
 
 const {expect} = chai;
