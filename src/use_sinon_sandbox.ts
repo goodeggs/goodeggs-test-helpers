@@ -5,7 +5,15 @@ import {Logger} from './create_logger_stub';
 
 // Re-export these so that consumers don't need to install @types/sinon and this helper stays well
 // encapsulated.
-export {SinonStub, SinonSpy, SinonFake, SinonMock, SinonFakeTimers, SinonSandbox} from 'sinon';
+export {
+  SinonStub,
+  SinonSpy,
+  SinonFake,
+  SinonMock,
+  SinonFakeTimers,
+  SinonSandbox,
+  SinonStubbedInstance,
+} from 'sinon';
 
 interface StubLoggerReturn {
   trace: SinonStub;
