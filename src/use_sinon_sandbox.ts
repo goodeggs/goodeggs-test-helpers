@@ -15,6 +15,11 @@ export {
   SinonStubbedInstance,
 } from 'sinon';
 
+export type MethodStub<T extends (...args: unknown[]) => unknown> = SinonStub<
+  Parameters<T>,
+  ReturnType<T>
+>;
+
 interface StubLoggerReturn {
   trace: SinonStub;
   debug: SinonStub;
