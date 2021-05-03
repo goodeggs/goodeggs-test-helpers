@@ -15,6 +15,14 @@ export {
   SinonStubbedInstance,
 } from 'sinon';
 
+/**
+ * @description useful type when we need to share stubbed methods in our tests
+ */
+export type MethodStub<T extends (...args: unknown[]) => unknown> = SinonStub<
+  Parameters<T>,
+  ReturnType<T>
+>;
+
 interface StubLoggerReturn {
   trace: SinonStub;
   debug: SinonStub;
