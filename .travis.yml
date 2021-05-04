@@ -6,7 +6,6 @@ node_js:
 env:
   global:
     - PATH="/tmp/ci-tools:./node_modules/.bin/:$PATH"
-    - secure: u/Tp7fahNzjWfFYE5te6tiMqn6rFo7mzbs+C5JwBqLAKb4OadbnE6eJ7lI7021awIezKVle3fRE/TTV9MQj/sIfjDOQzqLqV3SqftX5m0f0wiWfPvt8l1uOVDXzgK8r7+Mlc6KbhmyDEgmaRA+TE/+8hXx3R53ZPnmaUxp3FHvwjGri8a6vLq67QNUmN1CdtCRdl7e/d13DPxXqGQhLY+Z2OaBNXh/8e6WpX/oNFslm3eKD2hkZda0D4ZwhL3+q31UOX54KvW5RbwAay34H3uhWNmPRfnwP6niz9k2ihhRPXc821TFefrf6geQ+FLtSEcNQLNfclG034D99wz6jYiDdzf/RnMOdrt8ZqiTOgz1juIlnY0ZuphAf+W+lL2G9u2nRmqZruKciC93soiZqn63wsc4pglU5K4+0l3tjV1HB4HCFiqkJUQTU0MW6fyVNNl5Js76U7MF8F0/du9OegUXKYCXBvvXAE8FZ+/bgaqQt+vVSDX3EdO8Y5p/wJSk8iRNFnm1c4iZHChPVRsSZseIo0m2gFuofv9PjHzm0SjUrZkjgzVT1ndg3ueJp4ZEgvWGlBVAEAHWya9/zSUYDTucGrnro697wx9FaR0iIkDNjw84kC2+Ki7uYRdav+hL44Gf5H4vm4jg5dB5LaJRZ8uLYNLQ0Tgr0UisiOsCfoKks= # NPM_AUTH
 cache:
   yarn: true
   directories:
