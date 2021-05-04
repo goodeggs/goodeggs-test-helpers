@@ -1,6 +1,6 @@
 {
   "name": "goodeggs-test-helpers",
-  "version": "8.1.0",
+  "version": "8.3.0",
   "description": "Basic setup used for all goodeggs tests.",
   "author": "Good Eggs Inc.",
   "license": "MIT",

@@ -5,7 +5,23 @@ import {Logger} from './create_logger_stub';
 
 // Re-export these so that consumers don't need to install @types/sinon and this helper stays well
 // encapsulated.
-export {SinonStub, SinonSpy, SinonFake, SinonMock, SinonFakeTimers, SinonSandbox} from 'sinon';
+export {
+  SinonStub,
+  SinonSpy,
+  SinonFake,
+  SinonMock,
+  SinonFakeTimers,
+  SinonSandbox,
+  SinonStubbedInstance,
+} from 'sinon';
+
+/**
+ * @description useful type when we need to share stubbed methods in our tests
+ */
+export type MethodStub<T extends (...args: unknown[]) => unknown> = SinonStub<
+  Parameters<T>,
+  ReturnType<T>
+>;
 
 interface StubLoggerReturn {
   trace: SinonStub;
