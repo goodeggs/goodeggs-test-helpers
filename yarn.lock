@@ -3,8 +3,8 @@
 
 
 "@babel/cli@^7.13.10":
-  version "7.13.16"
-  resolved "https://registry.yarnpkg.com/@babel/cli/-/cli-7.13.16.tgz#9d372e943ced0cc291f068204a9b010fd9cfadbc"
+  version "7.14.3"
+  resolved "https://registry.yarnpkg.com/@babel/cli/-/cli-7.14.3.tgz#9f6c8aee12e8660df879610f19a8010958b26a6f"
   dependencies:
     commander "^4.0.1"
     convert-source-map "^1.1.0"
