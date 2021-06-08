@@ -61,7 +61,7 @@
     "@types/bunyan": "^1.8.6",
     "@types/mocha": "^8.2.1",
     "bunyan": "^1.8.15",
-    "leasot": "^11.5.0",
+    "leasot": "^12.0.0",
     "mocha": "^9.0.0",
     "typescript": "^4.2.3"
   }
