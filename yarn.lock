@@ -999,8 +999,8 @@
     "@types/chai" "*"
 
 "@types/chai@*", "@types/chai@^4.2.15":
-  version "4.2.18"
-  resolved "https://registry.yarnpkg.com/@types/chai/-/chai-4.2.18.tgz#0c8e298dbff8205e2266606c1ea5fbdba29b46e4"
+  version "4.2.19"
+  resolved "https://registry.yarnpkg.com/@types/chai/-/chai-4.2.19.tgz#80f286b515897413c7a35bdda069cc80f2344233"
 
 "@types/color-name@^1.1.1":
   version "1.1.1"
