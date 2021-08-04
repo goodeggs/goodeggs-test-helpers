@@ -2,9 +2,10 @@
 # yarn lockfile v1
 
 
-"@babel/cli@^7.13.10":
+"@babel/cli@^7.14.8":
   version "7.14.8"
   resolved "https://registry.yarnpkg.com/@babel/cli/-/cli-7.14.8.tgz#fac73c0e2328a8af9fd3560c06b096bfa3730933"
+  integrity sha512-lcy6Lymft9Rpfqmrqdd4oTDdUx9ZwaAhAfywVrHG4771Pa6PPT0danJ1kDHBXYqh4HHSmIdA+nlmfxfxSDPtBg==
   dependencies:
     commander "^4.0.1"
     convert-source-map "^1.1.0"
@@ -33,9 +34,10 @@
   version "7.14.9"
   resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.14.9.tgz#ac7996ceaafcf8f410119c8af0d1db4cf914a210"
 
-"@babel/core@^7.13.10", "@babel/core@^7.13.8":
+"@babel/core@^7.13.8", "@babel/core@^7.14.8":
   version "7.14.8"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.14.8.tgz#20cdf7c84b5d86d83fac8710a8bc605a7ba3f010"
+  integrity sha512-/AtaeEhT6ErpDhInbXmjHcUQXH0L0TEgscfcxk1qbOvLuKCa5aZT0SOOtDKFY96/CLROwbLSKyFor6idgNaU4Q==
   dependencies:
     "@babel/code-frame" "^7.14.5"
     "@babel/generator" "^7.14.8"
@@ -721,9 +723,10 @@
     core-js "^2.6.5"
     regenerator-runtime "^0.13.4"
 
-"@babel/preset-env@^7.13.10":
+"@babel/preset-env@^7.14.9":
   version "7.14.9"
   resolved "https://registry.yarnpkg.com/@babel/preset-env/-/preset-env-7.14.9.tgz#4a3bbbd745f20e9121d5925170bef040a21b7819"
+  integrity sha512-BV5JvCwBDebkyh67bPKBYVCC6gGw0MCzU6HfKe5Pm3upFpPVqiC/hB33zkOe0tVdAzaMywah0LSXQeD9v/BYdQ==
   dependencies:
     "@babel/compat-data" "^7.14.9"
     "@babel/helper-compilation-targets" "^7.14.5"
@@ -809,17 +812,19 @@
     "@babel/types" "^7.4.4"
     esutils "^2.0.2"
 
-"@babel/preset-typescript@^7.13.0":
+"@babel/preset-typescript@^7.14.5":
   version "7.14.5"
   resolved "https://registry.yarnpkg.com/@babel/preset-typescript/-/preset-typescript-7.14.5.tgz#aa98de119cf9852b79511f19e7f44a2d379bcce0"
+  integrity sha512-u4zO6CdbRKbS9TypMqrlGH7sd2TAJppZwn3c/ZRLeO/wGsbddxgbPDUZVNrie3JWYLQ9vpineKlsrWFvO6Pwkw==
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
     "@babel/helper-validator-option" "^7.14.5"
     "@babel/plugin-transform-typescript" "^7.14.5"
 
-"@babel/register@^7.13.8":
+"@babel/register@^7.14.5":
   version "7.14.5"
   resolved "https://registry.yarnpkg.com/@babel/register/-/register-7.14.5.tgz#d0eac615065d9c2f1995842f85d6e56c345f3233"
+  integrity sha512-TjJpGz/aDjFGWsItRBQMOFTrmTI9tr79CHOK+KIvLeCkbxuOAk2M5QHjvruIMGoo9OuccMh5euplPzc5FjAKGg==
   dependencies:
     clone-deep "^4.0.1"
     find-cache-dir "^2.0.0"
