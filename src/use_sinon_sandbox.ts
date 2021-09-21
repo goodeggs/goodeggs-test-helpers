@@ -39,7 +39,7 @@ interface StubLoggerReturn {
  */
 export default function useSinonSandbox(): {
   sandbox: SinonSandbox;
-  stubLogger: (logger: Logger) => void;
+  stubLogger: (logger: Logger) => StubLoggerReturn;
 } {
   const sandbox = sinon.createSandbox();
 
