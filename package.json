@@ -35,7 +35,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@types/chai": "^4.2.21",
+    "@types/chai": "^4.2.22",
     "@types/chai-as-promised": "^7.1.4",
     "@types/chai-datetime": "^0.0.37",
     "@types/dirty-chai": "^2.0.2",
