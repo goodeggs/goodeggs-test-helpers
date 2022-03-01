@@ -1,12 +1,12 @@
 // TODO(ndhoule): Replace with a better type
-type Rollbar = {
-  configure: (...args: Array<unknown>) => unknown;
-  critical: (...args: Array<unknown>) => unknown;
-  error: (...args: Array<unknown>) => unknown;
-  warning: (...args: Array<unknown>) => unknown;
-  info: (...args: Array<unknown>) => unknown;
-  debug: (...args: Array<unknown>) => unknown;
-};
+interface Rollbar {
+  configure: (...args: unknown[]) => unknown;
+  critical: (...args: unknown[]) => unknown;
+  error: (...args: unknown[]) => unknown;
+  warning: (...args: unknown[]) => unknown;
+  info: (...args: unknown[]) => unknown;
+  debug: (...args: unknown[]) => unknown;
+}
 
 /**
  * Creates a rollbar.js (window.Rollbar)-compatible stub.

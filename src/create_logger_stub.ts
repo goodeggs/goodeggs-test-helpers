@@ -2,13 +2,13 @@
 // Since this is a public module and goodeggs-logger is private, we can't reference its type.
 // Instead, limit this type to the minimum that this library actually needs to know.
 export interface Logger {
-  child(...params: Array<unknown>): Logger;
-  debug(...params: Array<unknown>): void;
-  error(...params: Array<unknown>): void;
-  fatal(...params: Array<unknown>): void;
-  info(...params: Array<unknown>): void;
-  trace(...params: Array<unknown>): void;
-  warn(...params: Array<unknown>): void;
+  child(...params: unknown[]): Logger;
+  debug(...params: unknown[]): void;
+  error(...params: unknown[]): void;
+  fatal(...params: unknown[]): void;
+  info(...params: unknown[]): void;
+  trace(...params: unknown[]): void;
+  warn(...params: unknown[]): void;
 }
 
 /**
