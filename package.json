@@ -51,11 +51,11 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.17.6",
-    "@babel/core": "^7.17.5",
+    "@babel/core": "^7.17.7",
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-typescript": "^7.16.7",
-    "@babel/register": "^7.17.0",
+    "@babel/register": "^7.17.7",
     "@goodeggs/toolkit": "^6.0.1",
     "@goodeggs/tsconfig": "^1.0.0",
     "@types/bunyan": "^1.8.8",
