@@ -3369,10 +3369,10 @@ kind-of@^6.0.2:
   version "6.0.2"
   resolved "https://registry.npmjs.org/kind-of/-/kind-of-6.0.2.tgz#01146b36a6218e64e58f3a8d66de5d7fc6f6d051"
 
-leasot@^12.2.0:
-  version "12.2.0"
-  resolved "https://registry.yarnpkg.com/leasot/-/leasot-12.2.0.tgz#1d2493d6f9a48490eeee6ad6b4473e0f0f0555dd"
-  integrity sha512-8c0KnONTPnnk0yOh6lmLqxKGTVZ0dKZ+N9aTjNCwGAThEv3KShigkTQxoWYcL7VBA7+hD/YDYHt0EnRnkdKXuw==
+leasot@^12.5.0:
+  version "12.5.0"
+  resolved "https://registry.yarnpkg.com/leasot/-/leasot-12.5.0.tgz#d2b0273d0eaa3fc20ded2ede81b46b9c6f158451"
+  integrity sha512-bx2hqCDZ6EVzdaM+aIBNO12Ff0BscGVWPf23Wzj5FLCEXZuJR729Wn5Naom8dJcqpEbsk2XXzvdHus/3WZqW5w==
   dependencies:
     async "^3.2.0"
     chalk "^4.1.0"
