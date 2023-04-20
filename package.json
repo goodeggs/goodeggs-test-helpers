@@ -39,7 +39,7 @@
     "@types/chai-as-promised": "^7.1.5",
     "@types/chai-datetime": "^0.0.37",
     "@types/dirty-chai": "^2.0.2",
-    "@types/sinon": "^10.0.13",
+    "@types/sinon": "^10.0.14",
     "@types/sinon-chai": "^3.2.9",
     "chai": "^4.3.7",
     "chai-as-promised": "7.1.1",
