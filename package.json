@@ -51,9 +51,9 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.21.5",
-    "@babel/core": "^7.21.8",
+    "@babel/core": "^7.22.0",
     "@babel/polyfill": "^7.12.1",
-    "@babel/preset-env": "^7.21.5",
+    "@babel/preset-env": "^7.22.0",
     "@babel/preset-typescript": "^7.21.5",
     "@babel/register": "^7.21.0",
     "@goodeggs/toolkit": "^7.0.1",
