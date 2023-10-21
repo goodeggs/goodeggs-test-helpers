@@ -1838,9 +1838,10 @@
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@types/color-name/-/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
 
-"@types/dirty-chai@^2.0.2":
-  version "2.0.2"
-  resolved "https://registry.npmjs.org/@types/dirty-chai/-/dirty-chai-2.0.2.tgz#eeac4802329a41ed7815ac0c1a6360335bf77d0c"
+"@types/dirty-chai@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@types/dirty-chai/-/dirty-chai-2.0.3.tgz#f0cf4e09baee125f915142569d5e4a24428587b0"
+  integrity sha512-B5yxhUQG4HACWwsgqhKlw1yJb/KmvwGdMbCy7PvN/9EthCPT4AyGac7Mds8aYV2fNNkBcMv/K0kgwb5NBrvWoQ==
   dependencies:
     "@types/chai" "*"
     "@types/chai-as-promised" "*"
