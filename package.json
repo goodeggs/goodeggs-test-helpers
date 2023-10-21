@@ -59,7 +59,7 @@
     "@goodeggs/toolkit": "^7.0.1",
     "@goodeggs/tsconfig": "^2.0.2",
     "@types/bunyan": "^1.8.10",
-    "@types/mocha": "^10.0.2",
+    "@types/mocha": "^10.0.3",
     "bunyan": "^1.8.15",
     "leasot": "^13.3.0",
     "mocha": "^10.2.0",
