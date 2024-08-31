@@ -1750,14 +1750,7 @@
   dependencies:
     "@types/node" "*"
 
-"@types/chai-as-promised@*":
-  version "7.1.4"
-  resolved "https://registry.yarnpkg.com/@types/chai-as-promised/-/chai-as-promised-7.1.4.tgz#caf64e76fb056b8c8ced4b761ed499272b737601"
-  integrity sha512-1y3L1cHePcIm5vXkh1DSGf/zQq5n5xDKG1fpCvf18+uOkpce0Z1ozNFPkyWsVswK7ntN1sZBw3oU6gmN+pDUcA==
-  dependencies:
-    "@types/chai" "*"
-
-"@types/chai-as-promised@^7.1.8":
+"@types/chai-as-promised@^7", "@types/chai-as-promised@^7.1.8":
   version "7.1.8"
   resolved "https://registry.yarnpkg.com/@types/chai-as-promised/-/chai-as-promised-7.1.8.tgz#f2b3d82d53c59626b5d6bbc087667ccb4b677fe9"
   integrity sha512-ThlRVIJhr69FLlh6IctTXFkmhtP3NpMZ2QGq69StYLyKZFp/HOp1VdKZj7RvfNWYYcJ1xlbLGLLWj1UvP5u/Gw==
@@ -1785,13 +1778,13 @@
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@types/color-name/-/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
 
-"@types/dirty-chai@^2.0.4":
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/@types/dirty-chai/-/dirty-chai-2.0.4.tgz#266a95f81cfa5572b1486cd2d562162e614d8226"
-  integrity sha512-2OHVsA7YO9X7xE4sMbtUx2EeC4FC7OZ7rk7H329bgoO8QwDa3eb6iFgd73N39Q/mJscwg9vGIwrMrTCkXjOdWw==
+"@types/dirty-chai@^2.0.5":
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/@types/dirty-chai/-/dirty-chai-2.0.5.tgz#f743c5735ba0453e2ec8036610356b1aee5f522b"
+  integrity sha512-7plNsOhNtFn/4eD47et+3CRFNX4tgUrbJRutGhBFqQrWWIyRAV1XP7BYZY0YTOr49t/ZwM/lOW6sxnEXqwVdKg==
   dependencies:
     "@types/chai" "*"
-    "@types/chai-as-promised" "*"
+    "@types/chai-as-promised" "^7"
 
 "@types/eslint@^8.4.6":
   version "8.4.6"
