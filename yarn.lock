@@ -1855,10 +1855,10 @@
     "@types/glob" "*"
     "@types/node" "*"
 
-"@types/sinon-chai@^3.2.12":
-  version "3.2.12"
-  resolved "https://registry.yarnpkg.com/@types/sinon-chai/-/sinon-chai-3.2.12.tgz#c7cb06bee44a534ec84f3a5534c3a3a46fd779b6"
-  integrity sha512-9y0Gflk3b0+NhQZ/oxGtaAJDvRywCa5sIyaVnounqLvmf93yBF4EgIRspePtkMs3Tr844nCclYMlcCNmLCvjuQ==
+"@types/sinon-chai@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@types/sinon-chai/-/sinon-chai-4.0.0.tgz#4d0e540a1498c0e85649088a0c7ed31d7627024f"
+  integrity sha512-Uar+qk3TmeFsUWCwtqRNqNUE7vf34+MCJiQJR5M2rd4nCbhtE8RgTiHwN/mVwbfCjhmO6DiOel/MgzHkRMJJFg==
   dependencies:
     "@types/chai" "*"
     "@types/sinon" "*"
@@ -4909,9 +4909,10 @@ signal-exit@^3.0.3:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.7.tgz#a9a1767f8af84155114eaabd73f99273c8f59ad9"
   integrity sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==
 
-sinon-chai@3.7.0:
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/sinon-chai/-/sinon-chai-3.7.0.tgz#cfb7dec1c50990ed18c153f1840721cf13139783"
+sinon-chai@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/sinon-chai/-/sinon-chai-4.0.0.tgz#77d59d9f4a833f0d3a88249b4637acc72656fdfa"
+  integrity sha512-cWqO7O2I4XfJDWyWElAQ9D/dtdh5Mo0RHndsfiiYyjWnlPzBJdIvjCVURO4EjyYaC3BjV+ISNXCfTXPXTEIEWA==
 
 sinon@^14.0.2:
   version "14.0.2"
