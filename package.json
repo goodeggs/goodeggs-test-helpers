@@ -63,6 +63,6 @@
     "bunyan": "^1.8.15",
     "leasot": "^13.3.0",
     "mocha": "^10.7.0",
-    "typescript": "^4.9.5"
+    "typescript": "^5.6.3"
   }
 }
