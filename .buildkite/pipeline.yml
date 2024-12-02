@@ -1,0 +1,23 @@
+plugins: &plugins
+  - ssh://git@github.com/goodeggs/goodeggs-core-buildkite-plugin#v0.1.1: &plugin-base
+      cache_node: true
+      secrets:
+        NPM_TOKEN:
+
+steps:
+  - label: 'Install'
+    command: NODE_ENV=development yarn install --frozen-lockfile
+    plugins: *plugins
+  - wait
+  - label: 'Test'
+    command: yarn test
+    plugins: *plugins
+  - wait
+  - label: 'Publish'
+    if: build.tag != null
+    command:
+      - export PATH="./node_modules/.bin:$PATH"
+      - yarn publish
+    concurrency: 1
+    concurrency_group: 'goodeggs-test-helpers/publish'
+    plugins: *plugins
