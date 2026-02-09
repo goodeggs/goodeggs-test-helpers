@@ -45,7 +45,7 @@
     "chai-as-promised": "7.1.2",
     "chai-datetime": "^1.8.0",
     "date-test-helpers": "1.1.2",
-    "dirty-chai": "2.0.1",
+    "dirty-chai": "3.0.0",
     "sinon": "^14.0.2",
     "sinon-chai": "3.7.0"
   },

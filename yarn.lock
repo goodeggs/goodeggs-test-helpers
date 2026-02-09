@@ -2714,9 +2714,10 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
-dirty-chai@2.0.1:
-  version "2.0.1"
-  resolved "https://registry.npmjs.org/dirty-chai/-/dirty-chai-2.0.1.tgz#6b2162ef17f7943589da840abc96e75bda01aff3"
+dirty-chai@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/dirty-chai/-/dirty-chai-3.0.0.tgz#f3b2746db3c30963688fafce28ee815ff7d515a2"
+  integrity sha512-pzsYGYaSyA8YlkTSIihBKFmIx5kxb/pYHLYl0uAC9wVx9am/iFzqVruGds/HNie7C+Wx0C8t70jC5zYI7NVOzA==
 
 doctrine@^2.1.0:
   version "2.1.0"
